@@ -2,71 +2,53 @@
   "nav": {
     "home": "Home",
     "about": "About",
-    "features": "Features",
-    "departments": "Departments",
-    "media": "Media",
-    "updates": "Updates",
+    "whyUs": "Why Us",
+    "howToStart": "How To Start",
+    "faq": "FAQ",
     "discord": "Discord",
-    "contact": "Contact",
     "join": "Join Discord"
   },
   "hero": {
-    "tagline": "YOUR CITY. YOUR STORY. YOUR CHOICE.",
-    "sub": "Step into Evil Town and create a story that belongs to you.",
+    "welcome": "Welcome To",
+    "name": "Evil Town",
+    "tagline": "Your City, Your Story, Your Choice",
+    "sub": "A World Built For Your Story, Your Choices, And Your Roleplay",
     "join": "Join Discord",
-    "enter": "Enter The City"
+    "explore": "Explore Evil Town"
   },
   "about": {
-    "title": "WELCOME TO EVIL TOWN",
+    "title": "About",
     "body": "Evil Town is a roleplay experience built around immersive stories, meaningful interactions, and a living city where every player can create their own path."
   },
-  "features": {
-    "title": "THE EVIL TOWN EXPERIENCE",
-    "f1": { "title": "Immersive Roleplay", "body": "Experience a living city where every decision can shape your story." },
-    "f2": { "title": "Custom Systems", "body": "Unique systems designed to make your experience deeper and more engaging." },
-    "f3": { "title": "Active Community", "body": "Become part of a growing community and build your place in the city." },
-    "f4": { "title": "Endless Possibilities", "body": "Choose your path and create a story that is truly yours." }
+  "whyUs": {
+    "title": "Why Us",
+    "f1": { "title": "Immersive Roleplay", "body": "An immersive roleplay experience built around story, choices, and interaction." },
+    "f2": { "title": "Unique Experience", "body": "A different kind of roleplay experience, shaped to make every story stand out." },
+    "f3": { "title": "Custom Systems", "body": "Custom-built systems designed to support and deepen the way you play." },
+    "f4": { "title": "Active Community", "body": "A community focused on interaction and building better stories together." }
   },
-  "departments": {
-    "title": "CITY DEPARTMENTS",
-    "soon": "Department information will be added soon."
+  "howTo": {
+    "title": "How To Start",
+    "step1": { "title": "Join Discord", "body": "Join the official Evil Town Discord" },
+    "step2": { "title": "Activation Request", "body": "Submit an activation request, write your ID name, and wait for review" },
+    "step3": { "title": "Create Your Identity", "body": "After approval, create your identity and prepare your character" },
+    "step4": { "title": "Enter Evil Town", "body": "Enter the city, start your journey, and create your story" }
   },
-  "city": {
-    "title": "LIVE YOUR STORY",
-    "law": "LAW",
-    "business": "BUSINESS",
-    "crime": "CRIME",
-    "civilian": "CIVILIAN",
-    "medical": "MEDICAL"
-  },
-  "media": {
-    "title": "FROM THE CITY",
-    "soon": "CITY MEDIA COMING SOON"
-  },
-  "updates": {
-    "title": "LATEST FROM EVIL TOWN",
-    "intro": "Stay up to date with the latest news, announcements and events happening in Evil Town.",
-    "soon": "More updates are coming soon."
-  },
-  "discord": {
-    "title": "JOIN THE CITY",
-    "body": "Join the official Evil Town Discord and become part of the community.",
-    "join": "Join Discord"
-  },
-  "cta": {
-    "title": "YOUR STORY STARTS HERE.",
-    "sub": "Are you ready to enter Evil Town?",
-    "join": "Join Discord",
-    "enter": "Enter The City"
+  "faq": {
+    "title": "FAQ",
+    "q1": { "q": "What Is Evil Town?", "a": "Evil Town is a roleplay experience where players can create their own stories and live their own path inside the city." },
+    "q2": { "q": "How Can I Join Evil Town?", "a": "Join the official Evil Town Discord to get the latest information about joining the city." },
+    "q3": { "q": "Where Can I Find Evil Town Updates?", "a": "All official announcements and updates will be shared through the official Evil Town channels." },
+    "q4": { "q": "Is Evil Town Available To Everyone?", "a": "Information about access and availability will be announced through the official Evil Town channels." },
+    "q5": { "q": "Where Can I Get Help?", "a": "Join the official Evil Town Discord for support and community assistance." }
   },
   "partner": {
-    "official": "OFFICIAL TECHNICAL PARTNER",
-    "body": "Website & Digital Systems developed by Vax Code."
+    "official": "Official Technical Partner",
+    "body": "Website & digital systems developed by Vax Code."
   },
   "footer": {
     "copy": "\u00a9 2026 Evil Town. All Rights Reserved.",
-    "dev": "Website Developed by Vax Code",
-    "builtBy": "Built by",
-    "through": "Through the Official Representative of Vax Code"
+    "builtBy": "Built By",
+    "through": "Through The Official Representative Of Vax Code"
   }
 }
