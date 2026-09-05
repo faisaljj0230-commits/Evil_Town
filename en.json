@@ -22,32 +22,71 @@
   },
   "whyUs": {
     "title": "Why Us",
-    "f1": { "title": "Immersive Roleplay", "body": "An immersive roleplay experience built around story, choices, and interaction." },
-    "f2": { "title": "Unique Experience", "body": "A different kind of roleplay experience, shaped to make every story stand out." },
-    "f3": { "title": "Custom Systems", "body": "Custom-built systems designed to support and deepen the way you play." },
-    "f4": { "title": "Active Community", "body": "A community focused on interaction and building better stories together." }
+    "f1": {
+      "title": "Immersive Roleplay",
+      "body": "An immersive roleplay experience built around story, choices, and interaction."
+    },
+    "f2": {
+      "title": "Unique Experience",
+      "body": "A different kind of roleplay experience, shaped to make every story stand out."
+    },
+    "f3": {
+      "title": "Custom Systems",
+      "body": "Custom-built systems designed to support and deepen the way you play."
+    },
+    "f4": {
+      "title": "Active Community",
+      "body": "A community focused on interaction and building better stories together."
+    }
   },
   "howTo": {
     "title": "How To Start",
-    "step1": { "title": "Join Discord", "body": "Join the official Evil Town Discord" },
-    "step2": { "title": "Activation Request", "body": "Submit an activation request, write your ID name, and wait for review" },
-    "step3": { "title": "Create Your Identity", "body": "After approval, create your identity and prepare your character" },
-    "step4": { "title": "Enter Evil Town", "body": "Enter the city, start your journey, and create your story" }
+    "step1": {
+      "title": "Join Discord",
+      "body": "Join the official Evil Town Discord"
+    },
+    "step2": {
+      "title": "Activation Request",
+      "body": "Submit an activation request, write your ID name, and wait for review"
+    },
+    "step3": {
+      "title": "Create Your Identity",
+      "body": "After approval, create your identity and prepare your character"
+    },
+    "step4": {
+      "title": "Enter Evil Town",
+      "body": "Enter the city, start your journey, and create your story"
+    }
   },
   "faq": {
     "title": "FAQ",
-    "q1": { "q": "What Is Evil Town?", "a": "Evil Town is a roleplay experience where players can create their own stories and live their own path inside the city." },
-    "q2": { "q": "How Can I Join Evil Town?", "a": "Join the official Evil Town Discord to get the latest information about joining the city." },
-    "q3": { "q": "Where Can I Find Evil Town Updates?", "a": "All official announcements and updates will be shared through the official Evil Town channels." },
-    "q4": { "q": "Is Evil Town Available To Everyone?", "a": "Information about access and availability will be announced through the official Evil Town channels." },
-    "q5": { "q": "Where Can I Get Help?", "a": "Join the official Evil Town Discord for support and community assistance." }
+    "q1": {
+      "q": "What Is Evil Town?",
+      "a": "Evil Town is a realistic-life roleplay server on GTA 5 for PS5, supporting the Enhanced edition."
+    },
+    "q2": {
+      "q": "How Can I Join Evil Town?",
+      "a": "You can join the Evil Town community through Discord, using the Join Discord button at the top of the website."
+    },
+    "q3": {
+      "q": "Where Can I Find Evil Town Updates?",
+      "a": "All official announcements and updates will be shared through the official Evil Town channels."
+    },
+    "q4": {
+      "q": "Is Evil Town Available To Everyone?",
+      "a": "Yes, everyone is welcome here — we're glad to have you join us."
+    },
+    "q5": {
+      "q": "Where Can I Get Help?",
+      "a": "You can get help by joining the Evil Town Discord, where you'll find a room called Tickets. Open a ticket there and the Evil Town support team will respond as soon as possible."
+    }
   },
   "partner": {
     "official": "Official Technical Partner",
     "body": "Website & digital systems developed by Vax Code."
   },
   "footer": {
-    "copy": "\u00a9 2026 Evil Town. All Rights Reserved.",
+    "copy": "© 2026 Evil Town. All Rights Reserved.",
     "builtBy": "Built By",
     "through": "Through The Official Representative Of Vax Code"
   }
