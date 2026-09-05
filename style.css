@@ -75,6 +75,15 @@ p { margin: 0; }
   max-width: 20ch;
 }
 
+.section__title::before {
+  content: '';
+  display: block;
+  width: 36px;
+  height: 3px;
+  background: var(--red);
+  margin-bottom: 20px;
+}
+
 /* ==========================================================================
    Buttons
    ========================================================================== */
@@ -244,13 +253,20 @@ p { margin: 0; }
 
 .hero {
   position: relative;
-  min-height: 92vh;
+  min-height: 88vh;
   display: flex;
-  align-items: flex-end;
-  background-image: url('https://files.catbox.moe/9911lo.webp');
-  background-size: cover;
-  background-position: center 30%;
+  align-items: center;
   overflow: hidden;
+}
+
+.hero__banner {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 32%;
+  filter: contrast(1.08) brightness(1.03) saturate(1.05);
 }
 
 .hero__grid {
@@ -260,16 +276,17 @@ p { margin: 0; }
     linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
   background-size: 34px 34px;
-  mask-image: linear-gradient(to bottom, rgba(0,0,0,0.9), transparent 75%);
-  -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,0.9), transparent 75%);
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,0.7), transparent 60%);
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,0.7), transparent 60%);
 }
 
 .hero__overlay {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(to top, rgba(10,10,10,0.98) 4%, rgba(10,10,10,0.62) 42%, rgba(10,10,10,0.5) 65%, rgba(10,10,10,0.62) 100%),
-    rgba(10,10,10,0.62);
+    linear-gradient(to top, rgba(10,10,10,0.9) 0%, transparent 22%),
+    linear-gradient(to bottom, rgba(10,10,10,0.75) 0%, transparent 26%),
+    linear-gradient(to top, var(--bg) 0%, transparent 6%);
 }
 
 .hero__content {
@@ -278,30 +295,66 @@ p { margin: 0; }
   width: 100%;
   max-width: var(--container);
   margin: 0 auto;
-  padding: 0 var(--gutter) 72px;
+  padding: 0 var(--gutter);
 }
 
-.hero__title {
-  font-size: clamp(52px, 11vw, 128px);
-  font-weight: 900;
-  letter-spacing: -0.02em;
-  line-height: 0.92;
+.hero__content::before {
+  content: '';
+  position: absolute;
+  top: 30px;
+  bottom: 30px;
+  left: -10%;
+  right: 38%;
+  background: rgba(6,6,6,0.92);
+  filter: blur(70px);
+  z-index: -1;
+}
+
+[dir="rtl"] .hero__content::before {
+  left: 38%;
+  right: -10%;
+}
+
+.hero__mark {
+  display: flex;
+  align-items: center;
+  gap: 12px;
   margin-bottom: 18px;
 }
 
+.hero__mark-logo {
+  height: 26px;
+  width: auto;
+}
+
+.hero__mark-line {
+  width: 34px;
+  height: 2px;
+  background: var(--red);
+}
+
+.hero__title {
+  font-size: clamp(32px, 5.4vw, 66px);
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  line-height: 1;
+  margin-bottom: 16px;
+  max-width: 12ch;
+}
+
 .hero__tagline {
-  font-size: clamp(15px, 1.8vw, 19px);
+  font-size: clamp(13px, 1.3vw, 15.5px);
   font-weight: 700;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.07em;
   color: var(--text);
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .hero__sub {
-  font-size: 16px;
+  font-size: 15.5px;
   color: var(--text-muted);
-  max-width: 46ch;
-  margin-bottom: 34px;
+  max-width: 40ch;
+  margin-bottom: 30px;
 }
 
 .hero__actions {
@@ -397,7 +450,13 @@ p { margin: 0; }
    Departments / Media / Updates — shared placeholder pattern
    ========================================================================== */
 
-.departments, .media, .updates {
+.updates {
+  padding: 90px 0;
+  border-bottom: 1px solid var(--border-soft);
+  background: var(--bg-alt);
+}
+
+.departments, .media {
   padding: 90px 0;
   border-bottom: 1px solid var(--border-soft);
 }
@@ -414,6 +473,37 @@ p { margin: 0; }
   font-size: 14.5px;
   font-weight: 600;
   letter-spacing: 0.04em;
+}
+
+.empty-state {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 56px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  text-align: center;
+  background: linear-gradient(180deg, rgba(227,13,13,0.03), transparent 60%);
+}
+
+.empty-state--inline {
+  padding: 34px 24px;
+}
+
+.empty-state__icon {
+  width: 34px;
+  height: 34px;
+  color: var(--red);
+  opacity: 0.85;
+}
+
+.empty-state p {
+  color: var(--text-faint);
+  font-size: 14.5px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  max-width: 38ch;
 }
 
 .updates__intro {
@@ -632,6 +722,15 @@ p { margin: 0; }
 @media (max-width: 640px) {
   .hero { min-height: 100vh; }
   .hero__content { padding-bottom: 56px; }
+  .hero__content::before {
+    left: -20px;
+    right: -20px;
+    background: rgba(6,6,6,0.94);
+  }
+  [dir="rtl"] .hero__content::before {
+    left: -20px;
+    right: -20px;
+  }
   .features__list { grid-template-columns: 1fr; }
   .feature { border-right: none !important; border-left: none !important; border-bottom: 1px solid var(--border); padding-bottom: 28px; }
   .feature:last-child { border-bottom: none; }
