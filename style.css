@@ -267,6 +267,10 @@ p { margin: 0; }
   filter: contrast(1.05) brightness(1.02) saturate(1.03);
 }
 
+.hero picture {
+  display: contents;
+}
+
 .hero__overlay {
   position: absolute;
   inset: 0;
@@ -660,6 +664,7 @@ p { margin: 0; }
 
 @media (max-width: 640px) {
   .hero { min-height: 100vh; }
+  .hero__banner { object-position: center center; }
   .features__list, .steps { grid-template-columns: 1fr; }
   .feature, .step {
     border-right: none !important;
