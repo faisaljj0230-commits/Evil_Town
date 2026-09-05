@@ -4,7 +4,8 @@ const STORAGE_KEY = 'evil-town-lang';
 const SUPPORTED = ['en', 'ar'];
 const DEFAULT_LANG = 'en';
 
-let translations = {};
+const translations = {};
+let currentLang = DEFAULT_LANG;
 
 function getSavedLang() {
   const saved = localStorage.getItem(STORAGE_KEY);
@@ -34,25 +35,37 @@ function setSwitchState(lang) {
   });
 }
 
-async function loadLanguage(lang) {
-  if (!translations[lang]) {
-    const res = await fetch(`${lang}.json`);
-    translations[lang] = await res.json();
-  }
-  applyTranslations(translations[lang]);
+function applyLanguage(lang) {
+  currentLang = lang;
+  const dict = translations[lang] || translations[DEFAULT_LANG];
+  if (dict) applyTranslations(dict);
   setDirection(lang);
   setSwitchState(lang);
   localStorage.setItem(STORAGE_KEY, lang);
 }
 
-function initLanguage() {
-  loadLanguage(getSavedLang());
+async function fetchLang(lang) {
+  try {
+    const res = await fetch(`${lang}.json`);
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    translations[lang] = await res.json();
+  } catch (err) {
+    console.error(`Evil Town: could not load "${lang}.json" — check the file exists at the site root with that exact lowercase name.`, err);
+  }
+}
 
-  document.getElementById('langSwitch').addEventListener('click', () => {
-    const current = document.documentElement.getAttribute('lang') || DEFAULT_LANG;
-    const next = current === 'en' ? 'ar' : 'en';
-    loadLanguage(next);
+async function initLanguage() {
+  const switchBtn = document.getElementById('langSwitch');
+
+  // Wire the click handler immediately so the button is responsive
+  // right away, independent of how long translations take to load.
+  switchBtn.addEventListener('click', () => {
+    const next = currentLang === 'en' ? 'ar' : 'en';
+    applyLanguage(next);
   });
+
+  await Promise.all(SUPPORTED.map(fetchLang));
+  applyLanguage(getSavedLang());
 }
 
 function initMobileMenu() {
