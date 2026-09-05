@@ -36,7 +36,7 @@ function setSwitchState(lang) {
 
 async function loadLanguage(lang) {
   if (!translations[lang]) {
-    const res = await fetch(`lang/${lang}.json`);
+    const res = await fetch(`${lang}.json`);
     translations[lang] = await res.json();
   }
   applyTranslations(translations[lang]);
