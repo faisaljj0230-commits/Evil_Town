@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Evil Town | Roleplay</title>
+<meta name="description" content="Evil Town is a modern roleplay experience where every player can create their own story.">
+
+<meta property="og:title" content="Evil Town | Roleplay">
+<meta property="og:description" content="Evil Town is a modern roleplay experience where every player can create their own story.">
+<meta property="og:image" content="https://files.catbox.moe/9911lo.webp">
+<meta property="og:type" content="website">
+
+<link rel="icon" type="image/png" href="https://files.catbox.moe/sufdb7.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ NAVBAR ============ -->
+<header class="nav" id="top">
+  <div class="nav__inner">
+    <a href="#home" class="nav__brand">
+      <img src="https://files.catbox.moe/sufdb7.png" alt="Evil Town" class="nav__logo">
+      <span class="nav__name">EVIL TOWN</span>
+    </a>
+
+    <nav class="nav__links" id="navLinks">
+      <a href="#home" data-i18n="nav.home">Home</a>
+      <a href="#about" data-i18n="nav.about">About</a>
+      <a href="#features" data-i18n="nav.features">Features</a>
+      <a href="#departments" data-i18n="nav.departments">Departments</a>
+      <a href="#media" data-i18n="nav.media">Media</a>
+      <a href="#updates" data-i18n="nav.updates">Updates</a>
+    </nav>
+
+    <div class="nav__actions">
+      <button class="lang-switch" id="langSwitch" type="button" aria-label="Switch language">
+        <span data-lang-label="en" class="lang-switch__part is-active">EN</span>
+        <span class="lang-switch__sep">|</span>
+        <span data-lang-label="ar" class="lang-switch__part">AR</span>
+      </button>
+      <a href="https://discord.gg/et-0" target="_blank" rel="noopener" class="btn btn--primary btn--small" data-i18n="nav.join">Join Discord</a>
+      <button class="nav__burger" id="navBurger" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- mobile menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#home" data-i18n="nav.home">Home</a>
+  <a href="#about" data-i18n="nav.about">About</a>
+  <a href="#features" data-i18n="nav.features">Features</a>
+  <a href="#departments" data-i18n="nav.departments">Departments</a>
+  <a href="#media" data-i18n="nav.media">Media</a>
+  <a href="#updates" data-i18n="nav.updates">Updates</a>
+  <a href="https://discord.gg/et-0" target="_blank" rel="noopener" class="btn btn--primary" data-i18n="nav.join">Join Discord</a>
+</div>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="hero__grid" aria-hidden="true"></div>
+    <div class="hero__overlay" aria-hidden="true"></div>
+    <div class="hero__content">
+      <h1 class="hero__title">EVIL TOWN</h1>
+      <p class="hero__tagline" data-i18n="hero.tagline">YOUR CITY. YOUR STORY. YOUR CHOICE.</p>
+      <p class="hero__sub" data-i18n="hero.sub">Step into Evil Town and create a story that belongs to you.</p>
+      <div class="hero__actions">
+        <a href="https://discord.gg/et-0" target="_blank" rel="noopener" class="btn btn--primary" data-i18n="hero.join">Join Discord</a>
+        <a href="#about" class="btn btn--secondary" data-i18n="hero.enter">Enter The City</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="about" id="about">
+    <div class="section__inner about__grid">
+      <div class="about__text">
+        <h2 data-i18n="about.title">WELCOME TO EVIL TOWN</h2>
+        <p data-i18n="about.body">Evil Town is a roleplay experience built around immersive stories, meaningful interactions, and a living city where every player can create their own path.</p>
+      </div>
+      <div class="about__mark" aria-hidden="true">
+        <img src="https://files.catbox.moe/sufdb7.png" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURES ============ -->
+  <section class="features" id="features">
+    <div class="section__inner">
+      <h2 class="section__title" data-i18n="features.title">THE EVIL TOWN EXPERIENCE</h2>
+      <div class="features__list">
+        <div class="feature">
+          <span class="feature__index">01</span>
+          <h3 data-i18n="features.f1.title">Immersive Roleplay</h3>
+          <p data-i18n="features.f1.body">Experience a living city where every decision can shape your story.</p>
+        </div>
+        <div class="feature">
+          <span class="feature__index">02</span>
+          <h3 data-i18n="features.f2.title">Custom Systems</h3>
+          <p data-i18n="features.f2.body">Unique systems designed to make your experience deeper and more engaging.</p>
+        </div>
+        <div class="feature">
+          <span class="feature__index">03</span>
+          <h3 data-i18n="features.f3.title">Active Community</h3>
+          <p data-i18n="features.f3.body">Become part of a growing community and build your place in the city.</p>
+        </div>
+        <div class="feature">
+          <span class="feature__index">04</span>
+          <h3 data-i18n="features.f4.title">Endless Possibilities</h3>
+          <p data-i18n="features.f4.body">Choose your path and create a story that is truly yours.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DEPARTMENTS ============ -->
+  <section class="departments" id="departments">
+    <div class="section__inner">
+      <h2 class="section__title" data-i18n="departments.title">CITY DEPARTMENTS</h2>
+      <div class="placeholder-block">
+        <p data-i18n="departments.soon">Department information will be added soon.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CITY EXPERIENCE ============ -->
+  <section class="city-experience">
+    <div class="section__inner">
+      <h2 class="section__title" data-i18n="city.title">LIVE YOUR STORY</h2>
+      <ul class="city-experience__list">
+        <li data-i18n="city.law">LAW</li>
+        <li data-i18n="city.business">BUSINESS</li>
+        <li data-i18n="city.crime">CRIME</li>
+        <li data-i18n="city.civilian">CIVILIAN</li>
+        <li data-i18n="city.medical">MEDICAL</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ MEDIA ============ -->
+  <section class="media" id="media">
+    <div class="section__inner">
+      <h2 class="section__title" data-i18n="media.title">FROM THE CITY</h2>
+      <div class="placeholder-block">
+        <p data-i18n="media.soon">CITY MEDIA COMING SOON</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ UPDATES ============ -->
+  <section class="updates" id="updates">
+    <div class="section__inner">
+      <h2 class="section__title" data-i18n="updates.title">LATEST FROM EVIL TOWN</h2>
+      <p class="updates__intro" data-i18n="updates.intro">Stay up to date with the latest news, announcements and events happening in Evil Town.</p>
+      <div class="placeholder-block">
+        <p data-i18n="updates.soon">More updates are coming soon.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DISCORD / CONTACT ============ -->
+  <section class="discord" id="discord">
+    <div class="section__inner discord__inner">
+      <h2 class="section__title" data-i18n="discord.title">JOIN THE CITY</h2>
+      <p data-i18n="discord.body">Join the official Evil Town Discord and become part of the community.</p>
+      <a href="https://discord.gg/et-0" target="_blank" rel="noopener" class="btn btn--primary" data-i18n="discord.join">Join Discord</a>
+    </div>
+  </section>
+
+  <!-- ============ FINAL CTA ============ -->
+  <section class="final-cta">
+    <div class="section__inner final-cta__inner">
+      <h2 data-i18n="cta.title">YOUR STORY STARTS HERE.</h2>
+      <p data-i18n="cta.sub">Are you ready to enter Evil Town?</p>
+      <div class="hero__actions">
+        <a href="https://discord.gg/et-0" target="_blank" rel="noopener" class="btn btn--primary" data-i18n="cta.join">Join Discord</a>
+        <a href="#home" class="btn btn--secondary" data-i18n="cta.enter">Enter The City</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="section__inner footer__top">
+    <div class="footer__brand">
+      <img src="https://files.catbox.moe/sufdb7.png" alt="Evil Town" class="footer__logo">
+      <span>EVIL TOWN</span>
+    </div>
+    <nav class="footer__links">
+      <a href="#home" data-i18n="nav.home">Home</a>
+      <a href="#about" data-i18n="nav.about">About</a>
+      <a href="#discord" data-i18n="nav.discord">Discord</a>
+      <a href="#discord" data-i18n="nav.contact">Contact</a>
+    </nav>
+  </div>
+
+  <div class="section__inner footer__partner">
+    <span class="footer__partner-label" data-i18n="partner.official">OFFICIAL TECHNICAL PARTNER</span>
+    <span class="footer__partner-name">Vax Code</span>
+    <p data-i18n="partner.body">Website &amp; Digital Systems developed by Vax Code.</p>
+  </div>
+
+  <div class="section__inner footer__bottom">
+    <p class="footer__copy" data-i18n="footer.copy">&copy; 2026 Evil Town. All Rights Reserved.</p>
+    <p class="footer__dev" data-i18n="footer.dev">Website Developed by Vax Code</p>
+    <p class="footer__credit">
+      <span data-i18n="footer.builtBy">Built by</span>
+      <span class="footer__credit-strong">Vax Code &times; Evil Town</span>
+      &mdash;
+      <span data-i18n="footer.through">Through the Official Representative of Vax Code</span>
+      <a href="https://discord.com/users/1149991645203406848" target="_blank" rel="noopener" class="footer__idom">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M20.317 4.369a19.79 19.79 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037 19.74 19.74 0 0 0-4.885 1.515.07.07 0 0 0-.032.027C.533 9.045-.32 13.579.099 18.057a.082.082 0 0 0 .031.056 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.1 13.1 0 0 1-1.872-.892.077.077 0 0 1-.008-.128c.126-.094.252-.192.372-.291a.074.074 0 0 1 .078-.01c3.927 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .079.01c.12.099.246.198.373.292a.077.077 0 0 1-.006.127c-.598.35-1.22.645-1.873.892a.076.076 0 0 0-.04.107c.36.698.772 1.362 1.225 1.993a.077.077 0 0 0 .084.029 19.84 19.84 0 0 0 6.002-3.03.077.077 0 0 0 .032-.055c.5-5.177-.838-9.674-3.549-13.66a.06.06 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.211 0 2.176 1.096 2.157 2.419 0 1.334-.955 2.419-2.157 2.419zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.211 0 2.176 1.096 2.157 2.419 0 1.334-.946 2.419-2.157 2.419z"/></svg>
+        iDom
+      </a>
+    </p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
